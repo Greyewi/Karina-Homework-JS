@@ -1,10 +1,12 @@
-// task 1
+const {getRandomIntInterval, getRandomFloatInterval} = require('./utils') // Импортируем функции из файла utils.js
+
+// Begin8
 // Даны два числа a и b. Найти их среднее арифметическое: "(a + b)/2"
-// time 
 
-const sum = (a,b) => {
-  return (a + b)/2
-}
-console.log(sum(10, 4))
+const a = getRandomFloatInterval(-1000, 1000)
+const b = getRandomFloatInterval(-1000, 1000)
 
+const average = (a + b)/2
+console.log("Среднее: " + average," a: " + a, " b: " + b )
 
+// time
